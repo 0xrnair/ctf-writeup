@@ -2,7 +2,7 @@
 
 I've noticed that a lot of well documented writeups are present for protostar and decided to instaad post a cliff-notes version for this and upcoming ones.
 
-### HEAP Overflow #0
+### Heap \#0
 Generated good ol' string using pattern_create for 140
 Aa0Aa1Aa2Aa3Aa4Aa5Aa6Aa7Aa8Aa9Ab0Ab1Ab2Ab3Ab4Ab5Ab6Ab7Ab8Ab9Ac0Ac1Ac2Ac3Ac4Ac5Ac6Ac7Ac8Ac9Ad0Ad1Ad2Ad3Ad4Ad5Ad6Ad7Ad8Ad9Ae0Ae1Ae2Ae3Ae4Ae5A6
 
@@ -14,7 +14,7 @@ attack payload:
 
 use ` not ' . **huge difference!!**
 
-### Heap #1
+### Heap \#1
 Did overflow with pattern_create
 exact match at 20
 Winner location at 0x08048494
@@ -29,14 +29,14 @@ put address is 08049774
 overwrite the address of argv[2] with GoT table's jump to puts(). Then second strcpy call will move address of winner() and overwrite the puts address
 when printf is called we get winner
 
-### Heap #2
+### Heap \#2
 
 differene between auth and service is 0x10 or 16 bytes.
 if u do serviceXXXXXXXXXXXXXXXXX [which x= 17 bytes] u get overflow and get int auth initialized to a specific value X. Then the check will pass.
 
 Another way is use after free
 
-### Heap #3
+### Heap \#3
 FOLLOW DOUG MALLOC articles
 In gdb:  
 
