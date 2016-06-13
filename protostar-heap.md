@@ -1,6 +1,6 @@
 # Protostar heap-overflow notes
 
-I've noticed that a lot of well documented writeups are present for protostar and decided to instaad post a cliff-notes version for this and upcoming ones. A bunch of useful [References](#References)
+I've noticed that a lot of well documented writeups are present for protostar and decided to instaad post a cliff-notes version for this and upcoming ones. A bunch of useful [References](#references)
 
 ### Heap \#0
 Generated good ol' string using pattern_create for 140
