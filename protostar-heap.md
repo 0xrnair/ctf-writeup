@@ -2,7 +2,7 @@
 
 I've noticed that a lot of well documented writeups are present for protostar and decided to instaad post a cliff-notes version for this and upcoming ones. A bunch of useful [References](#references)
 
-test [Heap 3](#heap-\#3)
+test [Heap 3](#heap-#3)
 
 ### Heap \#0
 Generated good ol' string using pattern_create for 140
